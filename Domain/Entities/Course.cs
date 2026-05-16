@@ -7,8 +7,8 @@
         public string Description { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public string? ThumbnailUrl { get; set; }
-        public bool IsPublished { get; set; }
-        public bool IsDeleted { get; set; }
+        public bool IsPublished { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
 
         //--------------------------------------------------------
         // Navigation properties

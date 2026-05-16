@@ -6,6 +6,8 @@ namespace Domain.Entities
     {
         public Guid StudentId { get; set; }
         public Guid CourseId { get; set; }
+        public Guid? CouponId { get; set; }
+        public decimal OriginalAmount { get; set; }
         public decimal Amount { get; set; }
         public string StripePaymentId { get; set; } = string.Empty;
         public PaymentStatus Status { get; set; } = PaymentStatus.Pending;
@@ -14,5 +16,6 @@ namespace Domain.Entities
         // Navigation Properties
         public User Student { get; set; } = null!;
         public Course Course { get; set; } = null!;
+        public Coupon? Coupon { get; set; }
     }
 }

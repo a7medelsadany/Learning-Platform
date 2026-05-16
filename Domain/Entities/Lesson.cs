@@ -12,5 +12,6 @@
         // Navigation property
         public Section Section { get; set; }= null!;
         public ICollection<LessonProgress> lessonProgresses { get; set; } = new List<LessonProgress>();
+        public ICollection<VideoHistory> videoHistories { get; set; }=new List<VideoHistory>();
     }
 }
