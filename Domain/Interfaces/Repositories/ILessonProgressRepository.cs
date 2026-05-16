@@ -1,9 +1,4 @@
 ﻿using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Interfaces.Repositories
 {
@@ -11,5 +6,6 @@ namespace Domain.Interfaces.Repositories
     {
         Task<LessonProgress?> GetByEnrollmentAndLessonAsync(Guid enrollmentId, Guid lessonId);
         Task<int> GetCompletedLessonsCountAsync(Guid enrollmentId);
+        Task<int> GetTotalLessonsCountAsync(Guid enrollmentId);
     }
 }
